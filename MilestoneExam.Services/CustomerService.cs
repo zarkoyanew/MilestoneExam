@@ -1,4 +1,5 @@
-﻿using MilestoneExam.Data.Models;
+﻿using MilestoneExam.Common.Exceptions;
+using MilestoneExam.Data.Models;
 using MilestoneExam.Data.Repositories.Interfaces;
 using MilestoneExam.Services.Interfaces;
 using System;
@@ -44,7 +45,7 @@ namespace MilestoneExam.Services
             var dbCustomer = await customerRepo.FindAsync(customer.Id);
 
             if (dbCustomer == null)
-                return;
+                throw new EntityNotFoundException($"{typeof(Customer).Name} with key {customer.Id} not found.");
 
             await customerRepo.DeleteAsync(customer);
             await factory.SaveChangesAsync();

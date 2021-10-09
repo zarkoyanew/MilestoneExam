@@ -1,4 +1,5 @@
-﻿using MilestoneExam.Data.Models;
+﻿using MilestoneExam.Common.Exceptions;
+using MilestoneExam.Data.Models;
 using MilestoneExam.Data.Repositories.Interfaces;
 using MilestoneExam.Services.Interfaces;
 using System;
@@ -33,7 +34,7 @@ namespace MilestoneExam.Services
             var dbPurchase = await purchaseRepo.FirstOrDefaultAsync(p => p.CustomerId == purchase.CustomerId && p.ProductId == purchase.ProductId);
 
             if (dbPurchase == null)
-                return;
+                throw new EntityNotFoundException($"{typeof(Purchase).Name} with key: {purchase.CustomerId} - {purchase.ProductId} not found.");
 
             await purchaseRepo.DeleteAsync(purchase);
             await factory.SaveChangesAsync();
