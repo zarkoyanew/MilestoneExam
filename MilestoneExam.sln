@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31727.386
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilestoneExam.WebApi", "MilestoneExam.WebApi\MilestoneExam.WebApi.csproj", "{B929B1C0-FBD1-44B7-801E-5F093E0F6DA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MilestoneExam.WebApi", "MilestoneExam.WebApi\MilestoneExam.WebApi.csproj", "{B929B1C0-FBD1-44B7-801E-5F093E0F6DA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilestoneExam.Data", "MilestoneExam.Data\MilestoneExam.Data.csproj", "{E5DAAE85-ECD5-40D4-87CB-521F5403BCAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MilestoneExam.Data", "MilestoneExam.Data\MilestoneExam.Data.csproj", "{E5DAAE85-ECD5-40D4-87CB-521F5403BCAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilestoneExam.Common", "Common\MilestoneExam.Common.csproj", "{54631501-79BB-4632-B410-5A742435A89D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MilestoneExam.Common", "Common\MilestoneExam.Common.csproj", "{54631501-79BB-4632-B410-5A742435A89D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilestoneExam.Services", "MilestoneExam.Services\MilestoneExam.Services.csproj", "{DBADCF6B-1151-41C7-A396-ECD767DB0BA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MilestoneExam.Services", "MilestoneExam.Services\MilestoneExam.Services.csproj", "{DBADCF6B-1151-41C7-A396-ECD767DB0BA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E7393327-C0F0-4B9D-A197-F473538B9B73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilestoneExams.Services.Tests", "MilestoneExams.Services.Tests\MilestoneExams.Services.Tests.csproj", "{5324E78B-869E-46CC-BEF7-3E52567A5855}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +37,16 @@ Global
 		{DBADCF6B-1151-41C7-A396-ECD767DB0BA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBADCF6B-1151-41C7-A396-ECD767DB0BA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBADCF6B-1151-41C7-A396-ECD767DB0BA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5324E78B-869E-46CC-BEF7-3E52567A5855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5324E78B-869E-46CC-BEF7-3E52567A5855}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5324E78B-869E-46CC-BEF7-3E52567A5855}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5324E78B-869E-46CC-BEF7-3E52567A5855}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5324E78B-869E-46CC-BEF7-3E52567A5855} = {E7393327-C0F0-4B9D-A197-F473538B9B73}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1C8F18AD-F25A-47CB-9FC1-489CAE302A68}
